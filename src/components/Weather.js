@@ -63,7 +63,7 @@ export default class Weather extends Component {
 //                                             <img src={`http://openweathermap.org/img/wn/${item.icon}@2x.png`} alt="alternate" />
 //                                             <p className="text-white">{item.description}</p>
 //                                         </div>
-                                        ))}
+//                                         ))}
                                         
                                         <div>
                                             <img src={`http://openweathermap.org/img/wn/${item.icon}@2x.png`} alt="alternate" />
