@@ -58,12 +58,17 @@ export default class Weather extends Component {
                                         </ul>
 
                                         <p className="text-white">{weatherData.name}</p>
-                                        {weatherData.weather.map( item => (
-                                        <div key={item.id}>
-                                            <img src={`http://openweathermap.org/img/wn/${item.icon}@2x.png`} alt="alternate" />
-                                            <p className="text-white">{item.description}</p>
-                                        </div>
+//                                         {weatherData.weather.map( item => (
+//                                         <div key={item.id}>
+//                                             <img src={`http://openweathermap.org/img/wn/${item.icon}@2x.png`} alt="alternate" />
+//                                             <p className="text-white">{item.description}</p>
+//                                         </div>
                                         ))}
+                                        
+                                        <div>
+                                            <img src={`http://openweathermap.org/img/wn/${item.icon}@2x.png`} alt="alternate" />
+                                            <p className="text-white">{weatherData.weather[0].description}</p>
+                                        </div>
 
                                         <h3 className="display-3 text-white">{weatherData.main.temp} &deg;C</h3>
                                     </div>
